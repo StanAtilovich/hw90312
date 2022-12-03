@@ -10,7 +10,7 @@ internal class ChatServiceTest {
 
     @Test(expected = MessageNotFoundException::class)
     fun shouldThrowMessageNotFoundException() {
-        ChatService.editMessage(Message(id = 7))
+        ChatService.editMessage(Message(idMessage = 7))
     }
 
     @Test
@@ -21,7 +21,7 @@ internal class ChatServiceTest {
 
     @Test(expected = MessageNotFoundException::class)
     fun shouldThrowException() {
-        ChatService.deleteMessage(Message(id = 7))
+        ChatService.deleteMessage(Message(idMessage = 7))
     }
 
     @Test
